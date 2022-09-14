@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
+
 
 # Application definition
 
@@ -37,12 +41,14 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "corsheaders",
     # "animal_rescue_app",
     "animal_rescue_api",
     "rest_framework"
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -70,7 +76,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "animal_rescue_app.wsgi.application"
+#WSGI_APPLICATION = "animal_rescue_app.wsgi.application"
+
 
 
 # Database
@@ -134,3 +141,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 #         'rest_framework.renderers.JSONRenderer',
 #     )
 # }
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
