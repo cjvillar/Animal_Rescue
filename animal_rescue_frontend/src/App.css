@@ -37,9 +37,20 @@
   }
 }
 
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(76, 72, 72);
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(22, 21, 21);
+}
+
+
 body{
-  background: rgb(54,217,182);
-  background: linear-gradient(90deg,rgba(54,217,182,1)0%,rgba(54,217,182,1) 43%);
+  background: rgb(23, 155, 181);
+  background: linear-gradient(90deg,rgb(89, 175, 221)0%,rgb(89, 175, 221) 43%);
 }
 
 #animal-content{
@@ -51,4 +62,23 @@ body{
   background-color: #fff;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+.profile_pic{
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.banner {
+  padding: 5px;
+  text-align: center;
+  background: rgb(116, 156, 243);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+  font-size: 30px;
 }
