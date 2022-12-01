@@ -37,7 +37,7 @@ export class AnimalProfile extends Component {
                 <ul className="list-group list-group-flush">
                 {this.state.Animals.map(item => (
                 <div>
-                  <img alt="HTML5" className="profile_pic" src={item.image}></img>
+                  <img alt="ANIMAL" className="profile_pic" src={item.image}></img>
                   <h3 style={{color:"green"}}>{item.adoption_status}</h3>
                   <h1>{item.name}</h1>
                   <h3>Age: {item.age}</h3>
