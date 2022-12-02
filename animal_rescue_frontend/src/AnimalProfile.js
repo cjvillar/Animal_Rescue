@@ -1,33 +1,38 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Animals = [
-  {
-    "id": 1,
-    "animal_type": "Bear",
-    "name": "Teddy",
-    "sex": "Male",
-    "breed": "Black Bear",
-    "neutred": false,
-    "date_added": "2022-09-09T18:22:43.596807Z",
-    "age": 5,
-    "weight": "200 lbs",
-    "adoption_status": "AVAILABLE",
-    "temperament": "Mild",
-    "likes": "Honey, Photographers",
-    "fee": "5$",
-    "location": "Alaska",
-    "image": "http://127.0.0.1:8000/media/profile_images/teddy.JPG"
-},
+// const Animals = [
+//   {
+//     "id": 1,
+//     "animal_type": "Bear",
+//     "name": "Teddy",
+//     "sex": "Male",
+//     "breed": "Black Bear",
+//     "neutred": false,
+//     "date_added": "2022-09-09T18:22:43.596807Z",
+//     "age": 5,
+//     "weight": "200 lbs",
+//     "adoption_status": "AVAILABLE",
+//     "temperament": "Mild",
+//     "likes": "Honey, Photographers",
+//     "fee": "5$",
+//     "location": "Alaska",
+//     "image": "http://127.0.0.1:8000/media/profile_images/teddy.JPG"
+// },
   
-];
 
-export class AnimalProfile extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {Animals};
-  };
+const AsyncAwait = () => {
+  const [Animals, setAnimals] = useState([])
 
-  render() {
+  const fetchData = async () => {
+    const response = await fetch("http://127.0.0.1:8000/api/animal_rescue_api/")
+    const data = await response.json()
+    setAnimals(data)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
     return(
         <main className="content">
         <div id="animal-content">
@@ -35,7 +40,7 @@ export class AnimalProfile extends Component {
             <div className="col-md-6 col-xl-10 mx-auto p-0">
             
                 <ul className="list-group list-group-flush">
-                {this.state.Animals.map(item => (
+                {Animals.map(item => (
                 <div>
                   <img alt="ANIMAL" className="profile_pic" src={item.image}></img>
                   <h3 style={{color:"green"}}>{item.adoption_status}</h3>
@@ -57,6 +62,4 @@ export class AnimalProfile extends Component {
     )
   }
 
-}
-
-export default AnimalProfile
+export default AsyncAwait
