@@ -19,4 +19,8 @@ class AnimalListUpdate(generics.RetrieveUpdateAPIView):
     queryset = Animal.objects.all()
     serializer_class = AnimalSerializer
     lookup_field = 'pk'
-    
+
+class Animal(generics.ListAPIView):
+    queryset = Animal.objects.all()
+    serializer_class = AnimalSerializer
+    lookup_field = 'pk'

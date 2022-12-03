@@ -33,7 +33,8 @@ const AsyncAwait = () => {
     fetchData()
   }, [])
 
-    return(
+ 
+  return(
         <main className="content">
         <div id="animal-content">
           {/* <div className="row"> */}
@@ -41,9 +42,10 @@ const AsyncAwait = () => {
             
                 <ul className="list-group list-group-flush">
                 {Animals.map(item => (
+               
                 <div>
                   <img alt="ANIMAL" className="profile_pic" src={item.image}></img>
-                  <h3 style={{color:"green"}}>{item.adoption_status}</h3>
+                  <h2 style={{color: item.adoption_status === "AVAILABLE" ? "green": "red"}}>{item.adoption_status}</h2>
                   <h1>{item.name}</h1>
                   <h3>Age: {item.age}</h3>
                   <h3>Weight: {item.weight}</h3>
@@ -59,7 +61,7 @@ const AsyncAwait = () => {
         {/* </div> */}
     
       </main>
-    )
-  }
+    )  
+}
 
 export default AsyncAwait
