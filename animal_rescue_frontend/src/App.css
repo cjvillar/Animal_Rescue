@@ -53,13 +53,13 @@ body{
 }
 
 #animal-content{
-  max-width: 500px;
-  max-height: 700px;
+  max-width: 800px;
+  max-height: 200px;
   margin: auto;
   margin-top: 100px;
   border-radius: 4px;
   margin-bottom: 100px;
-  box-shadow: 0 14px 28px rgba(16, 15, 15, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  /* box-shadow: rgba(16, 15, 15, 0.25), 0 10px 10px rgba(0,0,0,0.22); */
   /* justify-content: space-around; */
   /* align-items: flex-start; */
 }
