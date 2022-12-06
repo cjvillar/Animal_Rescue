@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
@@ -47,34 +9,30 @@ h3 {
   color: rgb(213, 206, 206);
 }
 
-
 body{
   background: linear-gradient(90deg,rgb(9, 69, 96)0%,rgba(32, 44, 96, 0.997) 43%);
 }
 
 #animal-content{
   max-width: 800px;
-  max-height: 200px;
+  /* max-height: 200px; */
   margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  margin-bottom: 100px;
-  /* box-shadow: rgba(16, 15, 15, 0.25), 0 10px 10px rgba(0,0,0,0.22); */
-  /* justify-content: space-around; */
-  /* align-items: flex-start; */
+  /* margin-top: 100px; */
+  /* border-radius: 4px; */
+  margin-bottom: 100px; 
 }
 
 .profile_pic{
   margin: auto;
   margin-bottom: 30px;
   border-radius: 4px;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .banner {
-  background: linear-gradient(90deg,rgb(1, 12, 40)0%,rgb(2, 21, 74) 43%);
+  background: linear-gradient(90deg,rgb(9, 69, 96)0%,rgba(32, 44, 96, 0.997) 43%);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
   font-size: 30px;
   border-radius: 4px;
@@ -83,4 +41,27 @@ body{
 .bannerlogo{
   display: inline-block;
   max-width: 200px; 
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #6a6868;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
 }

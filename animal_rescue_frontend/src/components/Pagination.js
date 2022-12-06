@@ -6,7 +6,7 @@ const Pagination = ({PostsPerPage, totalPosts, paginate}) =>{
         pageNumbers.push(i);
     }
     return(
-        <nav>
+        <navbar className='navbar'>
             <ul className='pagination'>
                 {pageNumbers.map(number => (
                     <li key={number} className='page-item'>
@@ -14,7 +14,7 @@ const Pagination = ({PostsPerPage, totalPosts, paginate}) =>{
                     </li>
                 ))}
             </ul>
-        </nav>
+        </navbar>
     )
 }
 

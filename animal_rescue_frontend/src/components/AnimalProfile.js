@@ -3,7 +3,12 @@ import React from 'react';
 
 const Posts = ({posts, loading}) => {
   if(loading){
-    return <h2>loading posts...</h2>; // add spin wheel animation here
+    return (
+    <div class="d-flex justify-content-center">  
+    <div class="spinner-border m-5 text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    </div>)
   }
   return (
         <div id="animal-content">
