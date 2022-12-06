@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import logo from './assets/space_dog_big_jump.png'
+import '../App.css';
+import logo from '../assets/space_dog_big_jump.png'
 
 
 export class Banner extends Component {
