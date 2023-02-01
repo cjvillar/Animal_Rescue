@@ -1,10 +1,10 @@
 import React from 'react';
 
-
 const Posts = ({posts, loading}) => {
   if(loading){
     return <h2>loading posts...</h2>; // add spin wheel animation here
   }
+ 
   return (
         <div id="animal-content">
             <div className="col-md-6 col-xl-10 mx-auto p-0">
@@ -26,6 +26,7 @@ const Posts = ({posts, loading}) => {
               ))}
               </ul>
              </div>
+           
            </div>     
 
   );

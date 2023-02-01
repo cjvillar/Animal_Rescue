@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom' 
 import '../App.css';
 import logo from '../assets/space_dog_big_jump.png'
+
 
 
 export class Banner extends Component {
@@ -10,6 +12,7 @@ export class Banner extends Component {
             <img alt="logo" className="bannerlogo" src={logo}></img>
             <h1 className="bannerlogo">ANIMAL RESCUE</h1>
             <h3> Please Support Your Local Shelter</h3>
+            <Link to="/">LogOut</Link>
         </div>
              
       )
