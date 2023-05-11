@@ -33,7 +33,9 @@ const App = () => {
   return (
     <div className='container mt-5'>
       <Banner />
+    
       <AnimalProfile posts={currentPosts} loading={loading} />
+     <br></br>
       <Pagination PostsPerPage={postPerPage} totalPosts={posts.length} paginate={paginate}/>
     </div>
 

@@ -39,7 +39,7 @@
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-  color: rgb(233, 241, 241);
+  color: rgb(97, 100, 108);
 }
 
 h3 {
@@ -49,19 +49,7 @@ h3 {
 
 
 body{
-  background: linear-gradient(90deg,rgb(9, 69, 96)0%,rgba(32, 44, 96, 0.997) 43%);
-}
-
-#animal-content{
-  max-width: 800px;
-  max-height: 200px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  margin-bottom: 100px;
-  /* box-shadow: rgba(16, 15, 15, 0.25), 0 10px 10px rgba(0,0,0,0.22); */
-  /* justify-content: space-around; */
-  /* align-items: flex-start; */
+  background: linear-gradient(90deg,rgb(221, 228, 232)0%,rgba(226, 228, 236, 0.997) 43%);
 }
 
 .profile_pic{
@@ -83,4 +71,19 @@ body{
 .bannerlogo{
   display: inline-block;
   max-width: 200px; 
+}
+
+button {
+  background-color: #121313;
+  color: #f0efe9;
+  border: 1px solid #dee9e2;
+  border-radius: 2px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 12px;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 2px 2px rgba(64, 61, 61, 0.75);
+  margin-right: 8px;
+  margin-bottom: 50px;
 }
