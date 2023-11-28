@@ -35,7 +35,7 @@ class Animal(models.Model):
     name = models.CharField(max_length=100)
     sex = models.CharField(max_length=100)
     breed = models.CharField(max_length=100)
-    neutred = models.BooleanField(default=False)
+    neutered = models.BooleanField(default=False)
     date_added = models.DateTimeField(auto_now_add=True)
     age = models.IntegerField(null=True)
     weight = models.CharField(max_length=20)
