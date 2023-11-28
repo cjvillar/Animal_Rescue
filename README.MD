@@ -7,7 +7,7 @@ This is a Django REST API backend + React frontend web application.
 ## API Usage
 
 ```bash
-animal-rescue:source venv/bin/activate
+animal-rescue: source venv/bin/activate
 
 animal-rescue: python manage.py runserver
 
