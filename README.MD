@@ -23,6 +23,16 @@ http://127.0.0.1:8000/api/animal_rescue_api/delete/1
 animal_rescue_frontend:npm run start
 ```
 
+## Docker
+
+```bash
+docker-compose build
+
+docker-compose up
+```
+
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
