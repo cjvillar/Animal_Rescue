@@ -25,15 +25,17 @@ SECRET_KEY = "django-insecure-8f(c)_#3j%3i9^d$l@+3(@gloo_8o8k^y+cuaq2qe4vjt&w05&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#CORS hack update for prod use!
+ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -42,7 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "corsheaders",
-    # "animal_rescue_app",
+    "animal_rescue_app",
     "animal_rescue_api",
     "rest_framework"
 ]

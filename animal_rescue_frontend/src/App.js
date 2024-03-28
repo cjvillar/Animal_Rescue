@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get("http://127.0.0.1:8000/api/animal_rescue_api/");
+      const res = await axios.get("http://0.0.0.0:8000/api/animal_rescue_api/");
       setPosts(res.data);
       setLoading(false);
     }

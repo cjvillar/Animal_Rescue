@@ -2,7 +2,7 @@ import React from 'react';
 
 const Posts = ({ posts, loading }) => {
   if (loading) {
-    return <h2>Loading posts...</h2>; // add spin wheel animation here
+    return <h2>Loading Posts...</h2>; // add spin wheel animation here
   }
   return (
     <div className="container mt-5">

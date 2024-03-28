@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  # backend service for Python/Django
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/animal_rescue_app 
+      - ./db.sqlite3:/app/db.sqlite3 
+    
+
+  # frontend service for React
+  frontend:
+    build:
+      context: ./animal_rescue_frontend/
+      dockerfile: Dockerfile
+
+    image: animal_rescue_frontend:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./animal_rescue_frontend:/animal_rescue_frontend  
+    depends_on:
+      - backend
+    command: npm start
+
+ 
+  
