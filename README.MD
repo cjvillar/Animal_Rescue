@@ -31,6 +31,14 @@ docker-compose build
 docker-compose up
 ```
 
+## Testing
+
+```bash
+export DJANGO_SETTINGS_MODULE=animal_rescue_app.settings
+
+```
+
+
 
 
 ## Contributing

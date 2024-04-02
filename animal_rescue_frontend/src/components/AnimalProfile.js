@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Posts = ({ posts, loading }) => {
   if (loading) {
@@ -14,13 +14,15 @@ const Posts = ({ posts, loading }) => {
                 className="card-img-top "
                 src={item.image}
                 alt="Animal"
-                width="400" 
+                width="400"
                 height="400"
               />
               <div className="card-body">
                 <h2
                   className={`card-title mb-3 ${
-                    item.adoption_status === 'AVAILABLE' ? 'text-success' : 'text-danger'
+                    item.adoption_status === "AVAILABLE"
+                      ? "text-success"
+                      : "text-danger"
                   }`}
                 >
                   {item.adoption_status}

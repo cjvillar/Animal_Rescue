@@ -1,7 +1,8 @@
 import pytest
-from animal_rescue_api.models import Animal
-from .factories import AnimalFactory
 
+from animal_rescue_api.models import Animal
+
+from .factories import AnimalFactory
 
 pytestmark = pytest.mark.django_db
 

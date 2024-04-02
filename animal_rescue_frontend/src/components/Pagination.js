@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Pagination = ({ PostsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -10,7 +10,11 @@ const Pagination = ({ PostsPerPage, totalPosts, paginate }) => {
       <ul className="pagination justify-content-center">
         {pageNumbers.map((number) => (
           <li key={number} className="page-item">
-            <button onClick={() => paginate(number)} href="#!" className="page-link">
+            <button
+              onClick={() => paginate(number)}
+              href="#!"
+              className="page-link"
+            >
               {number}
             </button>
           </li>

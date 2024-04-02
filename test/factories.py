@@ -3,6 +3,7 @@ from pytest_factoryboy import register
 
 from animal_rescue_api.models import Animal
 
+
 # builds a testing db with this animal model
 @register
 class AnimalFactory(factory.Factory):

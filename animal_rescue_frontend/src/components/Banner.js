@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import '../App.css';
-import logo from '../assets/space_dog_big_jump.png';
+import React, { Component } from "react";
+import "../App.css";
+import logo from "../assets/space_dog_big_jump.png";
 
 class Banner extends Component {
   render() {
@@ -9,7 +9,13 @@ class Banner extends Component {
         <div className="container justify-content-center">
           <nav className="navbar navbar-expand-lg navbar-light">
             <a className="navbar-brand" href="#">
-              <img alt="logo" className="navbar-brand-img" src={logo} width="80" height="80" />
+              <img
+                alt="logo"
+                className="navbar-brand-img"
+                src={logo}
+                width="80"
+                height="80"
+              />
               <span className="navbar-brand-text">ANIMAL RESCUE</span>
             </a>
             <button
